@@ -1,24 +1,102 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* General Styles */
+body {
+    background-color: #F3F0EB;
+    font-family: Arial;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/* Header Styles */
+.site-banner {
+    width: 100%;
+    line-height:75px;
+    padding: 0 20px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.site-logo {
+    width: 130px;
+    height: 41px;
+    vertical-align:middle;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.site-title {
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align:middle;
+    margin: 0 15px;
+}
+
+.site-nav-menu {
+    width: 100%;
+    line-height: 37px;
+    background-image: url("images/nav_background.png");
+    background-repeat: repeat-x;
+}
+
+/* Nav Menu Styles */
+.menu-list {
+    list-style-type: none;
+    margin: 0 125px;
+    padding: 0;
+}
+
+.menu-list-item {
+    display:inline;
+    padding: 11px 16px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    left: -2px;
+    margin: 0 -3px;
+}
+
+.menu-list-item:hover {
+    font-size: 12px;
+    padding: 11px 15px;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    background-image: url("images/nav_menu_item_hover.png");
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-list-item-selected {
+    display:inline;
+    padding: 11px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    background-image: url("images/nav_menu_item_hover.png");
+}
+
+.menu-link,
+.menu-link:hover {
+    color: #FFF;
+    text-decoration:none;
+}
+
+/* Dropdown Styles */
+.dropdown-list {
+    display: none;
+    position:relative;
+    list-style-type: none;
+    padding: 0;
+    background-color:#FFF;
+    -moz-box-shadow:    3px 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 3px #ccc;
+    box-shadow:         3px 3px 5px 3px #ccc;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+li:hover >  ul{
+    display: block;
+    position: absolute;
+    color: #000;
 }

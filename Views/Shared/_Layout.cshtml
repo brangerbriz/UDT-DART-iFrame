@@ -3,39 +3,64 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>UDT - DART Tool</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+      <header>
+          <section class="site-banner">
+            <img class="site-logo" src="~/Content/images/udt-logo.png" alt="UDT Logo" />
+            <span class="site-title">MDCPS Asset Management</span>
+          </section>
+          <nav class="site-nav-menu">
+              <ul class="menu-list">
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Level 1 Access</a>
+                      <ul class="dropdown-list">
+                          <li class="dropdown-list-item">One Click Assign Student Device</li>
+                          <li class="dropdown-list-item">One Click Return</li>
+                      </ul>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Level 2 Access</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Record Maintenance</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Entry Forms</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Views</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">School Level Reports</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Global Reports</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Logs</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Admin Batch Jobs</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Warranty Dept Views</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">Summer Refresh Status</a>
+                  </li>
+                  <li class="menu-list-item">
+                      <a href="" class="menu-link">User Levels Tracking</a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+      @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
