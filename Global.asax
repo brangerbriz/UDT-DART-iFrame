@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="UDT_DART_iFrame_Code.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="UDT_Dart_Tool.MvcApplication" Language="C#" %>
