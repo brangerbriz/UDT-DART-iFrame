@@ -1,20 +1,27 @@
 ﻿/* General Styles */
+html, body{
+    height: 100%;
+    width: 100%;
+}
 
 body {
     background-color: #F3F0EB;
     font-family: Arial;
-    height: 100%
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    width: 100%;
 }
 
 iframe {
     display:block;
-    width:100%;
-    overflow: scroll;
-    padding:20px 20px;
+    /*overflow: scroll;*/
+    padding: 133px 0 0 20px;
     height: 100%;
-    width: 98%;
-    position: absolute;
-    z-index:-1;
+    width: 100%;
+    z-index: 0;
 }
 
 /* Header Styles */
@@ -73,8 +80,8 @@ site-logo-link:hover {
 #account-section li::after {
     border-left: 1px solid black;
     content: '';
-    height: 11px;
-    margin-top: -5.5px;
+    height: 10px;
+    margin-top: -5px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -185,10 +192,4 @@ li:hover >  ul{
     display: block;
     left: 0;
     position: absolute;
-}
-
-/* iFrames */
-.zono-frames {
-    overflow: scroll;
-    margin: 20px 20px;
 }
