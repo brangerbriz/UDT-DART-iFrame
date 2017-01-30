@@ -1,8 +1,22 @@
 ﻿/* General Styles */
+
 body {
     background-color: #F3F0EB;
     font-family: Arial;
+    height: 100%
 }
+
+iframe {
+    display:block;
+    width:100%;
+    overflow: scroll;
+    padding:20px 20px;
+    height: 100%;
+    width: 98%;
+    position: absolute;
+    z-index:-1;
+}
+
 /* Header Styles */
 .site-banner {
     width: 100%;
@@ -171,4 +185,10 @@ li:hover >  ul{
     display: block;
     left: 0;
     position: absolute;
+}
+
+/* iFrames */
+.zono-frames {
+    overflow: scroll;
+    margin: 20px 20px;
 }
